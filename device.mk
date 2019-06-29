@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Camera Motor
+PRODUCT_PACKAGES += \
+    vendor.lineage.camera.motor@1.0-service.xiaomi_raphael
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
