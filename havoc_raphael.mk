@@ -6,7 +6,8 @@
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Havoc stuhavoc/config/common.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := havoc_raphael
