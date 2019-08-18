@@ -24,3 +24,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="raphael"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+export export
+HAVOC_BUILD_TYPE=Official
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=hacker1024
