@@ -13,5 +13,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Padding needed on bottom of lockscreen for FoD devices -->
-    <dimen name="op_keyguard_indication_margin_bottom">140.0px</dimen>
+    <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">140.0px</dimen>
 </resources>
