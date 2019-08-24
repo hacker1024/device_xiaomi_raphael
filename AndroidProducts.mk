@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_raphael.mk
+    $(LOCAL_DIR)/havoc_raphael.mk

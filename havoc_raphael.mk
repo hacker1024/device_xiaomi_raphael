@@ -1,16 +1,15 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The Android Open Source Illusion Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common RR stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common Havoc stuhavoc/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rr_raphael
+PRODUCT_NAME := havoc_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20 Pro
