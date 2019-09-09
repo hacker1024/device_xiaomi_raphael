@@ -1,8 +1,8 @@
 # Allow init to bind mount over vendor file
-allow init vendor_file:file mounton;
+allow init { system_file vendor_file }:file mounton;
 
 # Allow init to mount vendor configs
-allow init vendor_configs_file:file mounton;
+allow init { system_configs_file vendor_configs_file }:file mounton;
 
 # Allow init to mount offmode charging daemon
 allow init rootfs:file mounton;
