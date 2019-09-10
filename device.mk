@@ -76,6 +76,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     ueventd.qcom.rc
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
