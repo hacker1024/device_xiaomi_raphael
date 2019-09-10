@@ -146,6 +146,7 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
 # Treble
 BOARD_VNDK_VERSION := current
+PRODUCT_EXTRA_VNDK_VERSIONS := 28
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Verified Boot
