@@ -6,6 +6,3 @@ type persist_file, file_type;
 type display_data_file, data_file_type, core_data_file_type, file_type;
 type pps_socket, file_type;
 type sysfs_graphics, sysfs_type, fs_type;
-
-# system
-type system_configs_file, system_file_type, file_type;
