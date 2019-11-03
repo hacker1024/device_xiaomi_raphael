@@ -38,8 +38,8 @@ void load_raphaelglobal() {
     property_override("ro.product.model", "Mi 9T Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 9 PKQ1.181121.001 V10.3.1.0.PFKEUXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphael_eea/raphael:9/PKQ1.181121.001/V10.3.1.0.PFKEUXM:user/release-keys");
+    property_override("ro.build.description", "raphael-user 10 QKQ1.190716.003 V10.4.6.0.QFKCNXM release-keys");
+    property_override("ro.build.fingerprint", "Xiaomi/raphael/raphael:10/QKQ1.190716.003/V10.4.6.0.QFKCNXM/release-keys");
 }
 
 void load_raphaelin() {
@@ -54,8 +54,8 @@ void load_raphael() {
     property_override("ro.product.model", "Redmi K20 Pro");
     property_override("ro.build.product", "raphael");
     property_override("ro.product.device", "raphael");
-    property_override("ro.build.description", "raphael-user 9 PKQ1.181121.001 V10.3.12.0.PFKCNXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/raphael/raphael:9/PKQ1.181121.001/V10.3.12.0.PFKCNXM:user/release-keys");
+    property_override("ro.build.description", "raphael-user 10 QKQ1.190716.003 V10.4.6.0.QFKCNXM release-keys");
+    property_override("ro.build.fingerprint", "Xiaomi/raphael/raphael:10/QKQ1.190716.003/V10.4.6.0.QFKCNXM/release-keys");
 }
 
 
