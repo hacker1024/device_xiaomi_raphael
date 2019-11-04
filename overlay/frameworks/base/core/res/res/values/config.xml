@@ -318,5 +318,8 @@
     
     <!-- Hide the vendor mismatch dialog -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
+
+    <!-- Enable burn-in protection -->
+    <bool name="config_enableBurnInProtection">true</bool>
 </resources>
 
