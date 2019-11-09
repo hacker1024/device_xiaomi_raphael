@@ -124,6 +124,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/sn100x
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-impl \
+    android.hardware.power@1.2-service
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power/config/msmnile/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
