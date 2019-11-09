@@ -124,10 +124,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/sn100x
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
-
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages

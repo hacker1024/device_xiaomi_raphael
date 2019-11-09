@@ -155,10 +155,6 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/qcom/sepolicy/qva/private
 
-# Power
-TARGET_USES_INTERACTION_BOOST := true
-TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
-
 # Treble
 BOARD_VNDK_VERSION := current
 PRODUCT_EXTRA_VNDK_VERSIONS := 28
