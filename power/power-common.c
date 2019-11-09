@@ -42,6 +42,7 @@
 #include <utils/Log.h>
 #include <hardware/hardware.h>
 #include <hardware/power.h>
+#include <linux/input.h>
 
 #include "utils.h"
 #include "hint-data.h"
@@ -109,6 +110,23 @@ void power_hint(power_hint_t hint, void *data)
                 else
                     ALOGE("Lock for hint: %X was not acquired, cannot be released", hint);
         break;
+    }
+}
+void set_feature(feature_t feature, int state)
+{
+    switch (feature) {
+        case POWER_FEATURE_DOUBLE_TAP_TO_WAKE: {
+            int fd = open(TAP_TO_WAKE_NODE, O_RDWR);
+            struct input_event ev;
+            ev.type = EV_SYN;
+            ev.code = SYN_CONFIG;
+            ev.value = state ? INPUT_EVENT_WAKUP_MODE_ON : INPUT_EVENT_WAKUP_MODE_OFF;
+            write(fd, &ev, sizeof(ev));
+            close(fd);
+            sysfs_write(TAP_TO_WAKE_NODE, state	 ? "1" : "0");
+        } break;
+    default:
+          break;
     }
 }
 

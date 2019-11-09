@@ -12,6 +12,10 @@ LOCAL_SRC_FILES := power-common.c metadata-parser.c utils.c list.c hint-data.c p
 LOCAL_C_INCLUDES := external/libxml2/include \
                     external/icu/icu4c/source/common
 
+ifneq ($(TARGET_TAP_TO_WAKE_NODE),)
+    LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE=\"$(TARGET_TAP_TO_WAKE_NODE)\"
+endif
+
 ifeq ($(TARGET_USES_INTERACTION_BOOST),true)
     LOCAL_CFLAGS += -DINTERACTION_BOOST
 endif
@@ -19,5 +23,6 @@ endif
 LOCAL_MODULE := android.hardware.power@1.2-service
 LOCAL_INIT_RC := android.hardware.power@1.2-service.rc
 LOCAL_MODULE_TAGS := optional
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-variable
 include $(BUILD_EXECUTABLE)
