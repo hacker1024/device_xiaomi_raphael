@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2019 Havoc-OS
 # Copyright (C) 2019 RevengeOS 
 # Copyright (C) 2019 The LineageOS Project
 #
@@ -23,7 +24,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-revenge
+    $(LOCAL_PATH)/overlay-havoc
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
@@ -76,7 +77,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 #PRODUCT_COPY_FILES += \
-#    vendor/revengeos/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+#    vendor/havoc/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_raphael

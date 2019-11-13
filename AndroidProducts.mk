@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2019 Havoc-OS
 # Copyright (C) 2019 RevengeOS 
 # Copyright (C) 2019 The LineageOS Project
 #
@@ -6,8 +7,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_raphael.mk
+    $(LOCAL_DIR)/havoc_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_raphael-userdebug \
-    revengeos_raphael-eng
+    havoc_raphael-user \
+    havoc_raphael-userdebug \
+    havoc_raphael-eng
