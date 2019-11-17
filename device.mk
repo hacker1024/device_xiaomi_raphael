@@ -112,17 +112,9 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
-    com.nxp.nfc.nq \
-    libnqnfc-nci \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
-    NQNfcNci \
+    NfcNci \
     SecureElement \
     Tag
-
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
 
 # Power
 PRODUCT_PACKAGES += \
