@@ -23,3 +23,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
+
+# Build official
+export export 
+CUSTOM_BUILD_TYPE=OFFICIAL
