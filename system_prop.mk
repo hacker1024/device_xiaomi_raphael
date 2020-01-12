@@ -108,3 +108,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Vendor
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.va_aosp.support=1
+
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.adm.buffering.ms=12
